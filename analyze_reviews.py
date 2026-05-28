@@ -88,7 +88,6 @@ query($owner: String!, $repo: String!, $after: String) {
           nodes {
             requestedReviewer {
               ... on User { login }
-              ... on Team { name }
             }
           }
         }
