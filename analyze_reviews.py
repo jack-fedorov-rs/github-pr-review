@@ -38,7 +38,7 @@ except ImportError:
 # ============================================================
 ORG = "roofstock"
 REPOS = [
-    "service-requests-service",
+    "otto-service-requests-service",
     "services-contracts",
     "otto-vendor-website-gateway",
     "otto-ecs-services",
