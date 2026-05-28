@@ -1,0 +1,54 @@
+org: roofstock
+
+# All repos to collect data from — fetched once, shared across all teams.
+# Add repos here and reference them per-team below.
+repos:
+  - otto-service-requests-service
+  - services-contracts
+  - otto-vendor-website-gateway
+  - otto-ecs-services
+  - otto-web-core
+  - otto-e2e
+  - otto-predator-service
+
+period_days: 365
+recent_window_days: 60
+
+# Logins matching any of these patterns are treated as bots and excluded.
+bot_patterns:
+  - "[bot]"
+  - dependabot
+  - renovate
+  - github-actions
+  - copilot
+
+teams:
+  backend:
+    repos:
+      - otto-service-requests-service
+      - services-contracts
+      - otto-vendor-website-gateway
+      - otto-ecs-services
+    members:
+      - artem-saidanov-rs
+      - aleksandr-beliakov-rs
+      - dmitry-indikeev-rs
+      - alexandra-vorobyeva-rs
+      - yuriy-guzenko-rs
+      - viktoriia-serhieieva-rs
+    # Optional: enables tables 4-7 (monthly trend, per-repo, requested vs actual, response time)
+    focus_author: aleksandr-beliakov-rs
+    focus_reviewers:
+      - artem-saidanov-rs
+      - dmitry-indikeev-rs
+
+  frontend:
+    repos:
+      - otto-web-core
+      - otto-e2e
+      - otto-predator-service
+    members:
+      - yuriy-guzenko-rs
+      - viktoriia-serhieieva-rs
+      - alexandra-vorobyeva-rs
+    # focus_author / focus_reviewers are optional — omit to skip tables 4-7
